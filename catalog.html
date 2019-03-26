@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>Nerd's</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class = "page-header">
+        <nav class="main-nav">
+            <div class="nav-logo">
+                <img src="img/logo.png" width="140" height="76" alt="Nerd's">  <!--потом везде поменять размеры изображений на корректные-->
+            </div>
+            <div class="navigation">
+        <ul class="main-nav">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Корзина</a></li> <!--Не забыть про иконку корзины-->
+        </ul>
+            </div>
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+        </div>
+        
+    <div class="shop">
+        <form class="select-by" action="#" method="POST">
+            <div class="shop-by-parameters">
+                <div class="shop-by-parameters-price"> <!--Как сделать ползунок - в css?-->
+                   <h3>Стоимость:</h3>
+                   <input type="range" min="0" max="15000" name="price" id="price">
+                      <div class="price-controls">
+                        <label for="min-price">ОТ <input class="min-price" name="min-price" type="text" value="0"></label>
+                        <label for="max-price">ДО <input class="max-price" name="max-price" type="text" value="15 000"></label>
+                    </div>
+                </div> <!--Закрыла див со стоимостью-->
+
+                <div class="shop-by-parameters-grid">
+                    <h3>Сетка:</h3>
+                    <ul class="grid-choice">
+                        <li><input type="radio" name="grid" id="responsive" checked>Адаптивная</li>
+                        <li><input type="radio" name="grid" id="fixed">Фиксированная</li>
+                        <li><input type="radio" name="grid" id="fluid">Резиновая</li>
+                    </ul>
+                </div>
+
+                <div class="shop-by-parameters-features">
+                    <h3>Особенности:</h3>
+                    <ul class="features-choice">
+                        <li></li><input type="checkbox" name="slider" id="slider-field" checked>
+                            <label for="slider-field">Слайдер</label></li>
+                        <li></li><input type="checkbox" name="advantage" id="advantage-field">
+                            <label for="advantage-field">Блок преимуществ</label></li>
+                        <li></li><input type="checkbox" name="news" id="news-field">
+                            <label for="news-field">Новости</label></li>
+                        <li></li><input type="checkbox" name="gallery" id="gallery-field">
+                            <label for="gallery-field">Галерея</label></li>
+                        <li></li><input type="checkbox" name="cart" id="cart-field">
+                            <label for="cart-field">Корзина</label></li>
+                    </ul>
+                </div> <!--Закрыла див со особенностями-->
+                <input class="btn btn-show" type="submit" value="Показать">
+            </div> 
+        </form>
+        </div>
+
+    <div class="catalog">
+        <div class="catalog-sort-by">
+            <span>Сортировать:</span>
+            <ul class="catalog-sort-by-parameters"> <!--Потом в css их расположить горизонтально?-->
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По функционалу</a></li>
+            </ul>
+            <ul class="catalog-sort-by-parameters-up-down"> <!--Пока стрелочки так придумала делать-->
+                <li class="catalog-sort-by-parameters-down"><a href="#">&#9660;</a></li>
+                <li class="catalog-sort-by-parameters-up"><a href="#">&#9650;</a></li>
+            </ul>
+        </div> <!--Закрыла див с сортировкой в каталоге-->
+
+        <div class="catalog-items"> <!--Как ЭТО оформить сеткой???-->
+            <div class="catalog-item">
+                <div class="catalog-item-slider1">
+                        <!--слайдер-->
+                        <div class="item-slider1-slide1">
+                            <img src="img/aviator.png" width="" height="" alt="Aviator"/>
+                        </div>
+                        <div class="item-slider1-slide2">
+                            <img src="img/aviator-2.png" width="" height="" alt="Aviator"/>
+                        </div>
+                            <div class="item-slider1-slide3"></div>
+                            <img src="img/aviator-3.png" width="" height="" alt="Aviator"/>
+                        </div>
+                    </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item-slider2">
+                        <!--слайдер-->
+                        <div class="item-slider2-slide1">
+                            <img src="img/sunset.png" width="" height="" alt="Sunset"/>
+                        </div>
+                        <div class="item-slider2-slide2">
+                            <img src="img/sunset-2.png" width="" height="" alt="Sunset"/>
+                        </div>
+                        <div class="item-slider2-slide3"></div>
+                            <img src="img/sundet-3.png" width="" height="" alt="Sunset"/>
+                        </div>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item-slider3">
+                        <!--слайдер-->
+                        <div class="item-slider3-slide1">
+                            <img src="img/forte.png" width="" height="" alt="Forte"/>
+                        </div>
+                        <div class="item-slider3-slide2">
+                            <img src="img/forte-2.png" width="" height="" alt="Forte"/>
+                        </div>
+                        <div class="item-slider3-slide3"></div>
+                            <img src="img/forte-3.png" width="" height="" alt="Forte"/>
+                        </div>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item-slider4">
+                        <!--слайдер-->
+                            <div class="item-slider4-slide1">
+                                <img src="img/modern-organic.png" width="" height="" alt="Modern Organic Thai"/>
+                            </div>
+                            <div class="item-slider4-slide2">
+                                <img src="img/modern-organic-2.png" width="" height="" alt="Modern Organic Thai"/>
+                            </div>
+                            <div class="item-slider4-slide3"></div>
+                                <img src="img/modern-organic-3.png" width="" height="" alt="Modern Organic Thai"/>
+                            </div>
+                </div>
+            </div>
+            <div class="catalog-item">
+                    <div class="catalog-item-slider5">
+                            <!--слайдер-->
+                                <div class="item-slider5-slide1">
+                                    <img src="img/avenue.png" width="" height="" alt="Avenue"/>
+                                </div>
+                                <div class="item-slider5-slide2">
+                                    <img src="img/avenue-2.png" width="" height="" alt="Avenue"/>
+                                </div>
+                                <div class="item-slider5-slide3"></div>
+                                    <img src="img/avenue-3.png" width="" height="" alt="Avenue"/>
+                                </div>
+                    </div>
+            </div>
+            <div class="catalog-item">
+                    <div class="catalog-item-slider6">
+                            <!--слайдер-->
+                                <div class="item-slider6-slide1">
+                                    <img src="img/dovetail.png" width="" height="" alt="Dovetail"/>
+                                </div>
+                                <div class="item-slider6-slide2">
+                                    <img src="img/dovetail-2.png" width="" height="" alt="Dovetail"/>
+                                </div>
+                                <div class="item-slider6-slide3"></div>
+                                    <img src="img/dovetail-3.png" width="" height="" alt="Dovetail"/>
+                                </div>
+                    </div>
+            </div>
+
+            <div class="catalog-pages">
+                <ul class="catalog-pages"> <!--Потом в css их расположить горизонтально?-->
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">Следующая</a></li>
+                </ul>
+            </div>
+    </div> <!--Закрыла див с каталогом-->
+
+    <div class="map-and-contacts">
+      <div class="map-navigation">
+        <img src="img/map.png" width="" height="" alt="Как нас найти" />
+        <!--Разобраться с тем, надо ли использовать тег карты-->
+      </div>
+      <div class="adress">
+        <h3 class="adress-title">NERDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург<br />ул. Б. Конюшенная д. 19/8</p>
+        <p>тел. +7 (812) 666-02-66</p>
+        <a href="#" class="btn">Напишите нам</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div class="icons">
+        <a class="btn" href="#">Вконтакте</a>
+        <a class="btn" href="#">Фейсбук</a>
+        <a class="btn" href="#">Инстаграм</a>
+      </div>
+      <div class="discout">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+    <script src="external.js"></script>
+  </body>
+</html>

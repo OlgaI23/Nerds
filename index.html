@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nerd's</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header - это навигация, не слайдер, слайдер лучше вынести в main - http://htmlbook.ru/html/main -->
+    <div class="page-header">
+      <!-- http://htmlbook.ru/html/nav -->
+      <!-- header-top - плохое именование класса, нифига не понятно по нему что это такое  -->
+      <!-- Сделай лучше просто тег nav, класс "main-nav", а в нем уже див "nav-logo" -->
+      <div class="header-top">
+        <div class="header-logo">
+          <img src="img/logo.png" width="140" height="76" alt="Nerd's" />
+          <!--потом везде поменять размеры изображений на корректные-->
+        </div>
+        <div class="navigation">
+          <ul class="main-nav">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slider">
+        <!--Как правильно оформить слайдер?-->
+
+        <!-- У тебя про это будет отдельное видео, пока оставь так, там все не просто)) -->
+        <div class="slides-slide1">
+          <h2>Долго, дорого, скрупулезно.</h2>
+          <p>
+            Математически выверенный дизайн для вашего сайта или приложения.
+          </p>
+          <a class="btn" href="#">Узнать больше</a>
+          <img
+            src="img/comp-header.png"
+            width="140"
+            height="76"
+            alt="Узнать больше"
+          />
+        </div>
+        <div class="slides-slide2"></div>
+        <div class="slides-slide3"></div>
+      </div>
+
+      <div class="our-products">
+        <div class="website">
+          <img src="img/web-on-comp.png" width="" height="" alt="Веб-сайты" />
+          <!--Надо ли отделять картинку тегом br от текста или можно в css сделать?-->
+          <!-- Не надо, но не забудь добавить на все классы, они тебе понадобятся для сетки, вопрос переноса картинки как раз сеткой решишь -->
+          <br />
+          <b>Веб-сайты</b>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <!-- class=btn - это не информативно. Лучше сделать как-нибудь так: class="btn normal-confirm-btn order-btn" -->
+          <!-- тогда на btn ты навесишь общие стили для всех кнопок, на normal-confirm-btn стили для кнопок подтверждения,  -->
+          <!-- а на order-btn - стили только для кнопки заказа -->
+          <a class="btn" href="#">Заказать</a>
+        </div>
+        <div class="apps">
+          <img src="img/apps.png" width="" height="" alt="Приложения" />
+          <br />
+          <b>Приложения</b>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="btn" href="#">Заказать</a>
+        </div>
+        <div class="presentations">
+          <img
+            src="img/presentations.png"
+            width=""
+            height=""
+            alt="Презентации"
+          />
+          <br />
+          <b>Презентации</b>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn" href="#">Заказать</a>
+        </div>
+      </div>
+
+      <div class="about-us">
+        <!--Сделать в 2 колонки-->
+        <div class="about-us-left">
+          <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <p>
+            Исповедуем принципы минимализма и чистоты. Ставим математический
+            расчет выше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <div class="about-us-list"></div>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложение для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about-us-right">
+        <img src="img/logo.png" width="140" height="76" alt="Nerd's" />
+        <!--SINCE - это картинка или надо оформить как текст?-->
+        <!-- Это текст -->
+        <div class="about-us-list">
+          <h3>Как мы работаем</h3>
+          <ul>
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="out-clients">
+      <!--Выстроить в одну линию-->
+      <!-- Тоже решишь сеткой -->
+      <div class="project1">
+        <a href="#" class="project1">
+          <img src="img/glukhanko.png" width="" height="" alt="Glukhanko" />
+        </a>
+      </div>
+      <div class="project2">
+        <a href="#" class="project2">
+          <img
+            src="img/html-academy.png"
+            width=""
+            height=""
+            alt="HTML-Academy"
+          />
+        </a>
+      </div>
+      <div class="project3">
+        <a href="#" class="project3">
+          <img src="img/Borodinski.png" width="" height="" alt="Borodinski" />
+        </a>
+      </div>
+    </div>
+
+    <div class="map-and-contacts">
+      <div class="map-navigation">
+        <img src="img/map.png" width="" height="" alt="Как нас найти" />
+        <!--Разобраться с тем, надо ли использовать тег карты-->
+      </div>
+      <div class="adress">
+        <h3 class="adress-title">NERDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург<br />ул. Б. Конюшенная д. 19/8</p>
+        <p>тел. +7 (812) 666-02-66</p>
+        <a href="#" class="btn">Напишите нам</a>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <div class="icons">
+        <a class="btn" href="#">Вконтакте</a>
+        <a class="btn" href="#">Фейсбук</a>
+        <a class="btn" href="#">Инстаграм</a>
+      </div>
+      <div class="discout">
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+    <script src="external.js"></script>
+  </body>
+</html>
